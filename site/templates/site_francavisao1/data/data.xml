@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+    <categories>
+        <category id="1" title="Featured"/>
+        <category id="2" title="Articles"/>
+    </categories>
+    <articles>
+        <article id="1" category="2" title="Ínicio" alias="article" path="/inicio">
+            <![CDATA[<script>
+/*Artisteer scripts*/
+jQuery(function($) {
+    'use strict';
+    if ($.fn.slider) {
+        $(".art-slidecontainer91a4bead3822429aa8c1318d575d9f22").each(function () {
+            var slideContainer = $(this), tmp;
+            var inner = $(".art-slider-inner", slideContainer);
+            var helper = null;
+
+            if ($.support.transition) {
+                helper = new BackgroundHelper();
+                helper.init("fade", "next", $(".art-slide-item", inner).first().css($.support.transition.prefix + "transition-duration"));
+                inner.children().each(function () {
+                    helper.processSlide($(this));
+                });
+
+            }
+
+
+            inner.children().eq(0).addClass("active");
+            slideContainer.slider({
+                pause: 2600,
+                speed: 600,
+                repeat: true,
+                animation: "fade",
+                direction: "next",
+                navigator: slideContainer.siblings(".art-slidenavigator91a4bead3822429aa8c1318d575d9f22"),
+                helper: helper                
+            });
+        });
+    }
+});
+</script><script>document.write('<style>.art-slidecontainer91a4bead3822429aa8c1318d575d9f22 {    position: relative;        width: 128px;    height: 128px;        }.art-slidecontainer91a4bead3822429aa8c1318d575d9f22 .art-slide-item{}.art-slidecontainer91a4bead3822429aa8c1318d575d9f22 .art-slide-item {    -webkit-transition: 600ms ease-in-out opacity;    -moz-transition: 600ms ease-in-out opacity;    -ms-transition: 600ms ease-in-out opacity;    -o-transition: 600ms ease-in-out opacity;    transition: 600ms ease-in-out opacity;    position: absolute;    display: none;	left: 0;	top: 0;	opacity: 0;    width:  100%;    height: 100%;}.art-slidecontainer91a4bead3822429aa8c1318d575d9f22 .active, .art-slidecontainer91a4bead3822429aa8c1318d575d9f22 .next, .art-slidecontainer91a4bead3822429aa8c1318d575d9f22 .prev {    display: block;}.art-slidecontainer91a4bead3822429aa8c1318d575d9f22 .active {    opacity: 1;}.art-slidecontainer91a4bead3822429aa8c1318d575d9f22 .next, .art-slidecontainer91a4bead3822429aa8c1318d575d9f22 .prev {    width: 100%;}.art-slidecontainer91a4bead3822429aa8c1318d575d9f22 .next.forward, .art-slidecontainer91a4bead3822429aa8c1318d575d9f22 .prev.back {    opacity: 1;}.art-slidecontainer91a4bead3822429aa8c1318d575d9f22 .active.forward {    opacity: 0;}.art-slidecontainer91a4bead3822429aa8c1318d575d9f22 .active.back {    opacity: 0;}.art-slide91a4bead3822429aa8c1318d575d9f220 {    background-image:  url(\'images/template-content/slide91a4bead3822429aa8c1318d575d9f220.jpg\');        background-size:  100%;        background-position:  0 0;    background-repeat: no-repeat;}.art-slide91a4bead3822429aa8c1318d575d9f221 {    background-image:  url(\'images/template-content/slide91a4bead3822429aa8c1318d575d9f221.jpg\');        background-size:  100%;        background-position:  0 0;    background-repeat: no-repeat;}.art-slidenavigator91a4bead3822429aa8c1318d575d9f22 {  display: inline-block;  position: absolute;  direction: ltr !important;  top: 104px;  left: 65.63%;  z-index: 101;  line-height: 0 !important;  -webkit-background-origin: border !important;  -moz-background-origin: border !important;  background-origin: border-box !important;  -webkit-box-sizing: border-box;  -moz-box-sizing: border-box;  box-sizing: border-box;  text-align: center;    white-space: nowrap;    }.art-slidenavigator91a4bead3822429aa8c1318d575d9f22{background: #C0E2A2;background: linear-gradient(top, rgba(234, 245, 224, 0.6) 0, rgba(149, 206, 100, 0.6) 100%) no-repeat;background: -webkit-linear-gradient(top, rgba(234, 245, 224, 0.6) 0, rgba(149, 206, 100, 0.6) 100%) no-repeat;background: -moz-linear-gradient(top, rgba(234, 245, 224, 0.6) 0, rgba(149, 206, 100, 0.6) 100%) no-repeat;background: -o-linear-gradient(top, rgba(234, 245, 224, 0.6) 0, rgba(149, 206, 100, 0.6) 100%) no-repeat;background: -ms-linear-gradient(top, rgba(234, 245, 224, 0.6) 0, rgba(149, 206, 100, 0.6) 100%) no-repeat;background: linear-gradient(top, rgba(234, 245, 224, 0.6) 0, rgba(149, 206, 100, 0.6) 100%) no-repeat;-svg-background: linear-gradient(top, rgba(234, 245, 224, 0.6) 0, rgba(149, 206, 100, 0.6) 100%) no-repeat;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding:7px;}.art-slidenavigator91a4bead3822429aa8c1318d575d9f22 > a{background: #67A333;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;margin:0 10px 0 0;width: 10px;height: 10px;}.art-slidenavigator91a4bead3822429aa8c1318d575d9f22 > a.active{background: #C0D89C;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;margin:0 10px 0 0;width: 10px;height: 10px;}.art-slidenavigator91a4bead3822429aa8c1318d575d9f22 > a:hover{background: #7DA540;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;margin:0 10px 0 0;width: 10px;height: 10px;}</style>');</script><div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell" style="padding: 20px; width:34%" >
+        <p></p><div id="91a4bead3822429aa8c1318d575d9f22" style="position: relative; display: inline-block; z-index: 0; margin-top: 0px; margin-right: 20px; margin-bottom: 0px; margin-left: 0px;  border-width: 0px;  float: left;" class="art-collage">
+<div class="art-slider art-slidecontainer91a4bead3822429aa8c1318d575d9f22" data-width="128" data-height="128">
+    <div class="art-slider-inner">
+<div class="art-slide-item art-slide91a4bead3822429aa8c1318d575d9f220">
+
+</div>
+<div class="art-slide-item art-slide91a4bead3822429aa8c1318d575d9f221">
+
+</div>
+
+    </div>
+</div>
+<div class="art-slidenavigator art-slidenavigator91a4bead3822429aa8c1318d575d9f22" data-left="65.63">
+<a href="#" class="art-slidenavigatoritem">&nbsp;</a><a href="#" class="art-slidenavigatoritem">&nbsp;</a>
+</div>
+
+
+
+    </div>
+
+        
+         
+         
+         
+         
+        <p>
+        </p><p></p><h4>Blog</h4><p>Acesse nosso blog e tire todas as dúvidas sobre cirurgias refrativas e problemas na visão.</p><p><a href="#">Leia mais...</a></p>
+    </div><div class="art-layout-cell" style="padding: 20px; width:33%" >
+        <p></p><img style="float: left; margin-top: 0px; margin-right: 20px; margin-bottom: 0px; margin-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px;" width="128" height="128" alt="" class="art-lightbox" src="images/template-content/27797fde-e3f1-4569-b703-e6ddc221df12.png">
+        
+         
+        <p></p><h4>Chat</h4><p>Acesse nosso chat para agendar consulta ou tirar dúvidas.</p><p><a href="#">Leia Mais...</a></p>
+    </div><div class="art-layout-cell" style="padding: 20px; width:33%" >
+        <p><img style="float: left; margin-top: 0px; margin-right: 20px; margin-bottom: 0px; margin-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px;" width="128" height="128" alt="" class="art-lightbox" src="images/template-content/5bd741c6-3d82-4a08-b828-689145a25902.png">
+        </p><p></p><h4>loja</h4><p>Adquira lentes de contato e produtos para lentes direto da nossa loja virtual.<br></p><p><a href="#">Leia Mais...</a></p>
+    </div>
+    </div>
+</div>
+<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell" style="padding: 20px; width:67%" >
+        <p>Colocar uma frase demosntrando a visão da empresa e conteúdo do site<br></p><p>Colocar uma frase demosntrando a visão da empresa e conteúdo do site.</p><p><a href="#">Read More...</a></p>
+    </div><div class="art-layout-cell" style="padding: 20px; width:33%" >
+        <img width="64" height="64" alt="" src="images/template-content/facebook-2.png"><img width="64" height="64" alt="" src="images/template-content/twitter.png" class=""><img width="64" height="64" alt="" src="images/template-content/linkedin.png" class=""><img width="64" height="64" alt="" src="images/template-content/youtube.png" class="">
+    </div>
+    </div>
+</div>
+]]>
+        </article>
+        <article id="2" category="2" title="Contact Us" alias="article-1" path="/contact-us">
+            <![CDATA[<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell" style="padding-top: 0px;padding-right: 20px;padding-left: 20px; width:100%" >
+        <p>Nec egestas ut ut diam justo posuere nec ante nam ante. Sed nascetur pellentesque donec in vestibulum metus posuere condimentum arcu facilisi scelerisque metus auctor. Vitae sem et dolor quis luctus non ac fringilla convallis ligula.  Vitae metus ultrices turpis. Diam ut pellentesque turpis sit iaculis tortor  a velit nec nunc.  Amet ultrices fusce fusce hymenaeos leo ut. </p><h2>Our Address</h2><p>Maecenas posuere pellentesque.<br>  Principal Cidades, Country 12345-6789</p><p>Aenean mi turpis. <br>  Eget a vel rhoncus.</p><p>A. <a href="#">http://www.domain.com</a><br>  A. <a href="#">myemail@domain.com</a></p>
+    </div>
+    </div>
+</div>
+]]>
+        </article>
+    </articles>
+    <menus>
+        <menu id="1" name="ct-horizontal-menu" title="Content / Horizontal Menu"/>
+        <menu id="2" name="ct-vertical-menu" title="Content / Vertical Menu"/>
+        <menu id="3" name="ct-special-menu" title="Content / Special Menu"/>
+    </menus>
+    <menuitems>
+        <menuitem id="1" menu="ct-horizontal-menu" title="Ínicio" alias="ct-menu-item-1" path="/inicio" menutype="hmenu" type="single-article" article="1" showTitle="no" category="1" default="1"/>
+        <menuitem id="2" menu="ct-vertical-menu" title="Ínicio" alias="ct-menu-item-2" path="/inicio" menutype="vmenu" type="single-article" article="1" showTitle="no" category="1"/>
+        <menuitem id="3" menu="ct-horizontal-menu" title="Contact Us" alias="ct-menu-item-3" path="/contact-us" menutype="hmenu" type="single-article" article="2" showTitle="yes" category="1"/>
+        <menuitem id="4" menu="ct-vertical-menu" title="Contact Us" alias="ct-menu-item-4" path="/contact-us" menutype="vmenu" type="single-article" article="2" showTitle="yes" category="1"/>
+        <menuitem id="5" menu="ct-special-menu" title="Special Blog Page" alias="ct-menu-item-5" menutype="menu" type="category-blog-layout" category="1"/>
+        <menuitem id="6" menu="ct-special-menu" title="Special Single Page" alias="ct-menu-item-6" menutype="menu" type="single-article" showTitle="yes" category="1"/>
+    </menuitems>
+    <modules>
+        <module id="1" title="Content / Horizontal Menu" showTitle="true" position="user3" type="menu" menu="ct-horizontal-menu"/>
+        <module id="2" title="Footer" showTitle="false" position="copyright" type="custom">
+            <![CDATA[<p><span style="font-size: 14px; font-weight: bold;">Rua General Osório, 2360 (Esquina com Av. Major Nicácio) Centro - Franca / SP - 14400-520 - Tel.: 16 - 3723-2050</span></p><p><br></p><p>Copyright © 2013. Todos Direitos reservados. &nbsp;Desenvolvido por <a href="http://espaconovidade.com.br">Espaço Novidade Soluções em T.I.C.</a></p>]]>
+        </module>
+    </modules>
+    <parameters>
+        <parameter id="1" name="siteTitle" value="Sua Visão em foco"/>
+        <parameter id="2" name="siteSlogan" value="oftalmologia"/>
+    </parameters>
+</data>
